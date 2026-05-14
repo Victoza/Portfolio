@@ -12,6 +12,7 @@ export default defineConfig({
 
     babel({ presets: [reactCompilerPreset()] })
   ],
+  base:"/Portfolio",
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src')
