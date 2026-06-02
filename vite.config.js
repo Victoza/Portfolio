@@ -12,7 +12,7 @@ export default defineConfig({
 
     babel({ presets: [reactCompilerPreset()] })
   ],
-  base:"/Portfolio",
+  base: process.env.NODE_ENV === 'production' ? "/Portfolio" : "/",
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src')

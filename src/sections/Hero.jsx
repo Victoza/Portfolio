@@ -14,23 +14,10 @@ const skills = [
   "React",
   "Django",
   "WordPress",
-  "Next.js",
-  "TypeScript",
-  "Node.js",
-  "GraphQL",
-  "PostgreSQL",
-  "MongoDB",
-  "Redis",
-  "Docker",
-  "AWS",
   "Vercel",
   "Tailwind CSS",
-  "Prisma",
-  "Jest",
-  "Cypress",
   "Figma",
   "Git",
-  "GitHub Actions",
 ];
 
 
@@ -46,11 +33,11 @@ export const Hero = () => {
       {/* Green dots */}
       <div className='absolute inset-0 overflow-hidden pointer-events-none'>
       {[...Array(30)].map((_, index)=>(
-        <div className='absolute w-1.5 h-1.5 rounded-full opacity-60'
+        <div key={index} className='absolute w-1.5 h-1.5 rounded-full opacity-60'
         style={{
           backgroundColor: "#20B2A6",
           left: `${Math.random()* 100}%`,
-          top: `${Math.random()* 100}%`,
+          top: `${Math.random() * 100}%`,
           animation:`slow-drift ${15 + Math.random() * 20}s ease-in-out infinite`,
           animationDelay:`${Math.random() * 5}s`,
         }}

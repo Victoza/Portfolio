@@ -1,43 +1,43 @@
-// import { ArrowUpRight, GitHub } from "lucide-react";
+// import { ArrowUpRight, Github } from "lucide-react";
 // import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
-// const projects = [
-//   {
-//     title: "Fintech Dashboard",
-//     description:
-//       "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
-//     image: "/projects/project1.png",
-//     tags: ["React", "Typescript", "NodeJS"],
-//     link: "#",
-//     github: "#",
-//   },
-//   {
-//     title: "E-Commerce Platform",
-//     description:
-//       "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
-//     image: "/projects/project2.png",
-//     tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
-//     link: "#",
-//     github: "#",
-//   },
-//   {
-//     title: "AI Writing Assistant",
-//     description:
-//       "An intelligent writing tool powered by GPT-4, helping users create better content faster.",
-//     image: "/projects/project3.png",
-//     tags: ["React", "OpenAI", "Python", "FastAPI"],
-//     link: "#",
-//     github: "#",
-//   },
-//   {
-//     title: "Project Management Tool",
-//     description:
-//       "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
-//     image: "/projects/project4.png",
-//     tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
-//     link: "#",
-//     github: "#",
-//   },
-// ];
+const projects = [
+  {
+    title: "Fintech Dashboard",
+    description:
+      "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
+    image: "/projects/project1.png",
+    tags: ["React", "Typescript", "NodeJS"],
+    link: "#",
+    github: "#",
+  },
+  {
+    title: "E-Commerce Platform",
+    description:
+      "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
+    image: "/projects/project2.png",
+    tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
+    link: "#",
+    github: "#",
+  },
+  {
+    title: "AI Writing Assistant",
+    description:
+      "An intelligent writing tool powered by GPT-4, helping users create better content faster.",
+    image: "/projects/project3.png",
+    tags: ["React", "OpenAI", "Python", "FastAPI"],
+    link: "#",
+    github: "#",
+  },
+  {
+    title: "Project Management Tool",
+    description:
+      "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
+    image: "/projects/project4.png",
+    tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
+    link: "#",
+    github: "#",
+  },
+];
 
 export const Projects = () => {
   return (
@@ -63,7 +63,50 @@ export const Projects = () => {
             innovative tools that solve real-world problems.
           </p>
         </div>
+          {/* Projects Grid */}
+          <div className="grid md:grid-cols-2 gap-8">
+            {projects.map((project,index)=>(
+              <div key={index} className="group glass rounded-2xl overflow-hidden animate-fade-in hover:scale-[1.02] transition-all duration-300">
+                {/* Image */}
+                <div className="relative overflow-hidden aspect-video">
+                  <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent opacity-60"/>
 
+                  {/* Overlay ,come back to this*/}
+                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 gap-4 transition-opacity duration-300 flex items-center justify-center">
+                    <div className="text-center text-white">
+                      <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+                      <p className="text-sm mb-4 max-w-xs">{project.description}</p>
+                      <div className="flex flex-wrap gap-2 justify-center mb-4">
+                        {project.tags.map((tag, tagIndex) => (
+                          <span key={tagIndex} className="px-2 py-1 bg-primary/20 rounded-full text-xs">
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                      <div className="flex gap-2 justify-center">
+                        <a href={project.link} className="px-4 py-2 bg-primary text-white rounded-lg text-sm hover:bg-primary/80 transition-colors">
+                          View Project
+                        </a>
+                        <a href={project.github} className="px-4 py-2 border border-white/20 text-white rounded-lg text-sm hover:bg-white/10 transition-colors">
+                          GitHub
+                        </a>
+                      </div>
+                    </div>
+                    {/* Content */}
+                    {/* <div>
+                      <div>
+                        <h3>{project.title}</h3>
+                      </div>
+                      <p>{project.description}</p>
+                      <div></div>
+                    </div> */}
+                    
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
     </section>
   )
