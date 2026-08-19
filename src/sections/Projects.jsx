@@ -1,11 +1,11 @@
 // import { ArrowUpRight, Github } from "lucide-react";
-// import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
+import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 const projects = [
   {
-    title: "Fintech Dashboard",
+    title: "Fashion Fuxion",
     description:
-      "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
-    image: "/projects/project1.png",
+      "An e-commerce platform with ...",
+    image: "/projects/fashion.png",
     tags: ["React", "Typescript", "NodeJS"],
     link: "#",
     github: "#",
@@ -13,17 +13,17 @@ const projects = [
   {
     title: "E-Commerce Platform",
     description:
-      "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
-    image: "/projects/project2.png",
+      "An agricultural platform for ....",
+    image: "/projects/agrip.png",
     tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
     link: "#",
     github: "#",
   },
   {
-    title: "AI Writing Assistant",
+    title: "Movie site",
     description:
-      "An intelligent writing tool powered by GPT-4, helping users create better content faster.",
-    image: "/projects/project3.png",
+      "A movie listing site that allows users to discover films.",
+    image: "/projects/movieland.png",
     tags: ["React", "OpenAI", "Python", "FastAPI"],
     link: "#",
     github: "#",
@@ -107,6 +107,12 @@ export const Projects = () => {
               </div>
             ))}
           </div>
+          <div className="text-center mt-12 animate-fade-in animation-delay-500">
+          <AnimatedBorderButton>
+            View All Projects
+            {/* <ArrowUpRight className="w-5 h-5" /> */}
+          </AnimatedBorderButton>
+        </div>
         </div>
     </section>
   )
