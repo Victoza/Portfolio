@@ -1,37 +1,37 @@
 const experiences = [
   {
-    period: "2022 — Present",
-    role: "Senior Frontend Engineer",
-    company: "Tech Innovators Inc.",
+    period: "2026 — Present",
+    role: "Frontend Developer Intern",
+    company: "BuildLab.",
     description:
       "Leading frontend architecture for a suite of fintech products. Implemented micro-frontend architecture, reduced bundle size by 40%, and mentored a team of 5 developers.",
     technologies: ["React", "TypeScript", "Next.js", "GraphQL"],
     current: true,
   },
   {
-    period: "2020 — 2022",
-    role: "Frontend Engineer",
+    period: "2025 — 2026",
+    role: "Project Based Frontend Developer",
     company: "Digital Solutions Co.",
     description:
-      "Built and maintained multiple React applications for enterprise clients. Introduced automated testing practices that improved code coverage to 85%.",
+      "Built increasingly complex frontend applications, including e-commerce and service-based platforms. Worked with APIs, authentication flows, state management, Git, and deployment while improving debugging and problem-solving skills.",
     technologies: ["React", "Redux", "Jest", "Cypress"],
     current: false,
   },
   {
-    period: "2019 — 2020",
-    role: "Junior Developer",
+    period: "2024 — 2025",
+    role: "React Frontend Developer",
     company: "StartUp Labs",
     description:
-      "Contributed to the development of a SaaS platform from MVP to production. Collaborated with designers to implement pixel-perfect UI components.",
+      "Developed interactive web applications with React and Tailwind CSS. Built reusable components, implemented routing and API integration, and created responsive interfaces across different screen sizes.",
     technologies: ["React", "Node.js", "MongoDB", "AWS"],
     current: false,
   },
   {
-    period: "2018 — 2019",
-    role: "Freelance Developer",
+    period: "2023 — 2024",
+    role: "Independent Frontend Developer",
     company: "Self-Employed",
     description:
-      "Delivered custom web solutions for small businesses and startups. Built 15+ websites and applications, handling everything from design to deployment.",
+      "Built responsive websites and user interfaces using HTML, CSS, and JavaScript. Focused on developing strong foundations in responsive design, UI implementation, and clean, maintainable code.",
     technologies: ["JavaScript", "PHP", "WordPress", "MySQL"],
     current: false,
   },
