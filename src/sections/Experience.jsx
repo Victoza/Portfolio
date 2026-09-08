@@ -5,34 +5,32 @@ const experiences = [
     company: "BuildLab.",
     description:
       "Leading frontend architecture for a suite of fintech products. Implemented micro-frontend architecture, reduced bundle size by 40%, and mentored a team of 5 developers.",
-    technologies: ["React", "TypeScript", "Next.js", "GraphQL"],
+    technologies: ["React", "TypeScript", "Next.js",],
     current: true,
   },
   {
     period: "2025 — 2026",
     role: "Project Based Frontend Developer",
-    company: "Digital Solutions Co.",
     description:
       "Built increasingly complex frontend applications, including e-commerce and service-based platforms. Worked with APIs, authentication flows, state management, Git, and deployment while improving debugging and problem-solving skills.",
-    technologies: ["React", "Redux", "Jest", "Cypress"],
+    technologies: ["React", "Zustand", "Context API"],
     current: false,
   },
   {
     period: "2024 — 2025",
     role: "React Frontend Developer",
-    company: "StartUp Labs",
     description:
       "Developed interactive web applications with React and Tailwind CSS. Built reusable components, implemented routing and API integration, and created responsive interfaces across different screen sizes.",
-    technologies: ["React", "Node.js", "MongoDB", "AWS"],
+    technologies: ["React"],
     current: false,
   },
   {
     period: "2023 — 2024",
-    role: "Independent Frontend Developer",
+    role: "Website Designer",
     company: "Self-Employed",
     description:
-      "Built responsive websites and user interfaces using HTML, CSS, and JavaScript. Focused on developing strong foundations in responsive design, UI implementation, and clean, maintainable code.",
-    technologies: ["JavaScript", "PHP", "WordPress", "MySQL"],
+      "Built responsive websites and user interfaces using WordPress and Elementor as page builder. Focused on developing strong foundations in responsive design, UI implementation, and clean, maintainable design.",
+    technologies: ["WordPress", "Elementor"],
     current: false,
   },
 ];
