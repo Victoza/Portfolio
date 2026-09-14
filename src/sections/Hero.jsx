@@ -77,9 +77,10 @@ export const Hero = () => {
             <div className='flex flex-wrap gap-4 animate-fade-in animation-delay-300'>
               {/* Add the Arrow Icon */}
               <Button size="lg">Contact Me</Button>
-              <AnimatedBorderButton>
+              <Button size="lg"  href="/Victor_Oyebanji_Frontend_CV.pdf"  download="Victor_Oyebanji_Frintend_CV.pdf">Download CV</Button>
+              {/* <AnimatedBorderButton>
                  Download CV
-              </AnimatedBorderButton>
+              </AnimatedBorderButton> */}
             </div>
             {/* Social Links */}
             <div className='flex items-center gap-4 animate-fade-in animation-delay-400'>
