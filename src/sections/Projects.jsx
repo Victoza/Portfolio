@@ -77,7 +77,7 @@ export const Projects = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent opacity-60"/>
 
                   {/* Overlay ,come back to this*/}
-                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 gap-4 transition-opacity duration-300 flex items-center justify-center">
+                  <div className="hidden lg:flex absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 gap-4 transition-opacity duration-300 items-center justify-center">
                     <div className="text-center text-white">
                       <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                       <p className="text-sm mb-4 max-w-xs">{project.description}</p>
@@ -107,6 +107,25 @@ export const Projects = () => {
                     </div> */}
                     
                   </div>
+                </div>
+                <div className="flex lg:hidden gap-3 p-5">
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 bg-primary text-white rounded-lg text-sm"
+                  >
+                    View Project
+                  </a>
+
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 border border-white/20 text-white rounded-lg text-sm"
+                  >
+                    GitHub
+                  </a>
                 </div>
               </div>
             ))}

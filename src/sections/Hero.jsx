@@ -87,7 +87,7 @@ export const Hero = () => {
               {[
                 {icon:GithubIcon, href:"https://github.com/Victoza/"},
                 {icon:LinkedinIcon, href:"https://www.linkedin.com/in/victor-oyebanji-dev/"},
-                {icon:TwitterIcon, href:"https://twitter.com/victoroyebanji"},
+                {icon:TwitterIcon, href:"#"},
               ].map((social, index)=>(
                 <a key={index} href={social.href} className='p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300'>
                   <social.icon className='w-5 h-5'/>
