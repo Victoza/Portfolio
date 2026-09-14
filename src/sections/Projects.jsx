@@ -1,41 +1,45 @@
 // import { ArrowUpRight, Github } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
+
 const projects = [
   {
     title: "Fashion Fuxion",
     description:
-      "An e-commerce platform with ...",
+      "A responsive fashion e-commerce platform where users can browse products, view product details, filter by categories, manage cart items, and adjust product quantities.",
     image: "/projects/fashion.png",
-    tags: ["React", "Typescript", "NodeJS"],
-    link: "#",
-    github: "#",
+    tags: ["React", "Tailwind CSS", "Context API"],
+    link: "https://fashion-fuxion.vercel.app/",
+    github: "https://github.com/Victoza/FashionFuxion",
   },
+
   {
-    title: "E-Commerce Platform",
+    title: "Agric Premium",
     description:
-      "An agricultural platform for ....",
+      "A responsive agricultural services platform designed to showcase farming products and services, with product listings, service information, appointment booking, articles, and accessible user interfaces.",
     image: "/projects/agrip.png",
-    tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
-    link: "#",
-    github: "#",
+    tags: ["React", "Tailwind CSS"],
+    link: "https://agric-premium.vercel.app/",
+    github: "https://github.com/Victoza/AgricPremium",
   },
+
   {
-    title: "Movie site",
+    title: "Movie Land",
     description:
-      "A movie listing site that allows users to discover films.",
+      "A movie discovery website that allows users to browse and explore movies through a clean, responsive interface.",
     image: "/projects/movieland.png",
-    tags: ["React", "OpenAI", "Python", "FastAPI"],
-    link: "#",
-    github: "#",
+    tags: ["React", "API Integration", "Tailwind CSS"],
+    link: "https://movie-land-self.vercel.app/",
+    github: "https://github.com/Victoza/MovieLand",
   },
+
   {
-    title: "Project Management Tool",
+    title: "Odore Perla",
     description:
-      "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
-    image: "/projects/project4.png",
-    tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
-    link: "#",
-    github: "#",
+      "A modern perfume brand landing page designed to showcase fragrances through an elegant, responsive interface with product highlights, reviews, and clear calls to action.",
+    image: "/projects/odore.png",
+    tags: ["React", "Tailwind CSS"],
+    link: "https://odore.vercel.app/",
+    github: "https://github.com/Victoza/Odore",
   },
 ];
 

@@ -78,15 +78,15 @@ export const Hero = () => {
               {/* Add the Arrow Icon */}
               <Button size="lg">Contact Me</Button>
               <AnimatedBorderButton>
-                <Download className='w-5 h-5'/> Download CV
+                 Download CV
               </AnimatedBorderButton>
             </div>
             {/* Social Links */}
             <div className='flex items-center gap-4 animate-fade-in animation-delay-400'>
               <span className='text-sm text-muted-foreground'>Follow:</span>
               {[
-                {icon:GithubIcon, href:"https://github.com/victoroyebanji"},
-                {icon:LinkedinIcon, href:"https://www.linkedin.com/in/victor-oyebanji/"},
+                {icon:GithubIcon, href:"https://github.com/Victoza/"},
+                {icon:LinkedinIcon, href:"https://www.linkedin.com/in/victor-oyebanji-dev/"},
                 {icon:TwitterIcon, href:"https://twitter.com/victoroyebanji"},
               ].map((social, index)=>(
                 <a key={index} href={social.href} className='p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300'>
